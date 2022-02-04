@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.gui;
 
 import java.awt.*;
@@ -134,37 +131,37 @@ public class Hud extends Module
         }
         if (!Hud.mc.isSingleplayer() && this.server.getValue()) {
             if (!this.rainbow.getValue()) {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rServer §f" + ((IMinecraft)Hud.mc).getCurrentServerData().serverIP + "", 2, posY, c.getRGB());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rServer ï¿½f" + ((IMinecraft)Hud.mc).getCurrentServerData().serverIP + "", 2, posY, c.getRGB());
             }
             else {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rServer §f" + ((IMinecraft)Hud.mc).getCurrentServerData().serverIP + "", 2, posY, Rainbow.getInt());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rServer ï¿½f" + ((IMinecraft)Hud.mc).getCurrentServerData().serverIP + "", 2, posY, Rainbow.getInt());
             }
             posY += 10;
         }
         if (this.ping.getValue()) {
             if (!this.rainbow.getValue()) {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rPing §f" + this.getPing() + "ms", 2, posY, c.getRGB());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rPing ï¿½f" + this.getPing() + "ms", 2, posY, c.getRGB());
             }
             else {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rPing §f" + this.getPing() + "ms", 2, posY, Rainbow.getInt());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rPing ï¿½f" + this.getPing() + "ms", 2, posY, Rainbow.getInt());
             }
             posY += 10;
         }
         if (this.tps.getValue()) {
             if (!this.rainbow.getValue()) {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rTPS §f" + TickRate.TPS + "", 2, posY, c.getRGB());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rTPS ï¿½f" + TickRate.TPS + "", 2, posY, c.getRGB());
             }
             else {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rTPS §f" + TickRate.TPS + "", 2, posY, Rainbow.getInt());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rTPS ï¿½f" + TickRate.TPS + "", 2, posY, Rainbow.getInt());
             }
             posY += 10;
         }
         if (this.fps.getValue()) {
             if (!this.rainbow.getValue()) {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rFPS §f" + Minecraft.getDebugFPS() + "", 2, posY, c.getRGB());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rFPS ï¿½f" + Minecraft.getDebugFPS() + "", 2, posY, c.getRGB());
             }
             else {
-                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "§rFPS §f" + Minecraft.getDebugFPS() + "", 2, posY, Rainbow.getInt());
+                FontUtils.drawStringWithShadow(ClickGuiModule.customFont.getValue(), "ï¿½rFPS ï¿½f" + Minecraft.getDebugFPS() + "", 2, posY, Rainbow.getInt());
             }
             posY += 10;
         }

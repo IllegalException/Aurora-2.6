@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.command.commands;
 
 import me.memeszz.aurora.command.*;
@@ -22,11 +19,11 @@ public class ModsCommand extends Command
     
     public void onCommand(final String command, final String[] args) throws Exception {
         final int size = ModuleManager.getModules().size();
-        final TextComponentString msg = new TextComponentString("§7Modules: §f ");
+        final TextComponentString msg = new TextComponentString("ï¿½7Modules: ï¿½f ");
         for (int i = 0; i < size; ++i) {
             final Module mod = ModuleManager.getModules().get(i);
             if (mod != null) {
-                msg.appendSibling(new TextComponentString((mod.isEnabled() ? "§a" : "§c") + mod.getName() + "§7" + ((i == size - 1) ? "" : ", ")).setStyle(new Style().setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, (ITextComponent)new TextComponentString(mod.getCategory().name()))).setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, Command.getPrefix() + "toggle " + mod.getName()))));
+                msg.appendSibling(new TextComponentString((mod.isEnabled() ? "ï¿½a" : "ï¿½c") + mod.getName() + "ï¿½7" + ((i == size - 1) ? "" : ", ")).setStyle(new Style().setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, (ITextComponent)new TextComponentString(mod.getCategory().name()))).setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, Command.getPrefix() + "toggle " + mod.getName()))));
             }
         }
         Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage((ITextComponent)msg);

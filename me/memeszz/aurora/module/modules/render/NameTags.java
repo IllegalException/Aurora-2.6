@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.render;
 
 import me.memeszz.aurora.module.*;
@@ -75,13 +72,13 @@ public class NameTags extends Module
         GL11.glPushMatrix();
         String name = (Friends.isFriend(player.getName()) ? ChatFormatting.AQUA : ChatFormatting.WHITE) + player.getName();
         if (this.gamemode.getValue()) {
-            name = name + "" + this.getGMText(player) + "§f";
+            name = name + "" + this.getGMText(player) + "ï¿½f";
         }
         if (this.ping.getValue()) {
             name = name + " " + this.getPing(player) + "ms";
         }
         if (this.health.getValue()) {
-            name = name + " §r" + MathHelper.ceil(player.getHealth() + player.getAbsorptionAmount());
+            name = name + " ï¿½r" + MathHelper.ceil(player.getHealth() + player.getAbsorptionAmount());
         }
         final float var14 = 0.016666668f * this.getNametagSize((EntityLivingBase)player);
         GL11.glTranslated((double)(float)x, (float)y + 2.5, (double)(float)z);

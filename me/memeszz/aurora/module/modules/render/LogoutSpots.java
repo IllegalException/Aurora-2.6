@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.render;
 
 import me.memeszz.aurora.module.*;
@@ -60,7 +57,7 @@ public class LogoutSpots extends Module
                 date = new SimpleDateFormat("k:mm").format(new Date());
                 this.loggedPlayers.put(e, date);
                 pos = "x" + e.getPosition().getX() + " y" + e.getPosition().getY() + " z" + e.getPosition().getZ();
-                Wrapper.sendClientMessage(ChatFormatting.LIGHT_PURPLE + event.getName() + "§c Disconnected At " + ChatFormatting.GREEN + pos + ".");
+                Wrapper.sendClientMessage(ChatFormatting.LIGHT_PURPLE + event.getName() + "ï¿½c Disconnected At " + ChatFormatting.GREEN + pos + ".");
             }
         });
     }

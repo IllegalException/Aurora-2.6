@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.player;
 
 import me.memeszz.aurora.module.*;
@@ -32,7 +29,7 @@ public class AntiVoid extends Module
     public void onUpdate(final UpdateEvent event) {
         final Double yLevel = AntiVoid.mc.player.posY;
         if (yLevel <= 0.5) {
-            Wrapper.sendClientMessage("§aAttempting To Get " + ChatFormatting.RED + AntiVoid.mc.player.getName() + ChatFormatting.GREEN + " Out Of The void!");
+            Wrapper.sendClientMessage("ï¿½aAttempting To Get " + ChatFormatting.RED + AntiVoid.mc.player.getName() + ChatFormatting.GREEN + " Out Of The void!");
             if (this.mode.getValue().equals("Bounce")) {
                 AntiVoid.mc.player.moveVertical = 10.0f;
                 AntiVoid.mc.player.jump();
@@ -56,6 +53,6 @@ public class AntiVoid extends Module
     }
     
     public String getHudInfo() {
-        return "§7[§f" + this.mode.getValue() + "§7]";
+        return "ï¿½7[ï¿½f" + this.mode.getValue() + "ï¿½7]";
     }
 }

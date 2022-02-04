@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.misc;
 
 import me.memeszz.aurora.module.*;
@@ -79,52 +76,52 @@ public class DonkeyAlert extends Module
         final String value = this.mode.getValue();
         switch (value) {
             case "BLACK": {
-                return "§0";
+                return "ï¿½0";
             }
             case "RED": {
-                return "§c";
+                return "ï¿½c";
             }
             case "AQUA": {
-                return "§b";
+                return "ï¿½b";
             }
             case "BLUE": {
-                return "§9";
+                return "ï¿½9";
             }
             case "GOLD": {
-                return "§6";
+                return "ï¿½6";
             }
             case "GRAY": {
-                return "§7";
+                return "ï¿½7";
             }
             case "WHITE": {
-                return "§f";
+                return "ï¿½f";
             }
             case "GREEN": {
-                return "§a";
+                return "ï¿½a";
             }
             case "YELLOW": {
-                return "§e";
+                return "ï¿½e";
             }
             case "DARK_RED": {
-                return "§4";
+                return "ï¿½4";
             }
             case "DARK_AQUA": {
-                return "§3";
+                return "ï¿½3";
             }
             case "DARK_BLUE": {
-                return "§1";
+                return "ï¿½1";
             }
             case "DARK_GRAY": {
-                return "§8";
+                return "ï¿½8";
             }
             case "DARK_GREEN": {
-                return "§2";
+                return "ï¿½2";
             }
             case "DARK_PURPLE": {
-                return "§5";
+                return "ï¿½5";
             }
             case "LIGHT_PURPLE": {
-                return "§d";
+                return "ï¿½d";
             }
             default: {
                 return "";

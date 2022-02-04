@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.world;
 
 import me.memeszz.aurora.module.*;
@@ -135,7 +132,7 @@ public class AutoGG extends Module
         else {
             message = "GG, " + name + " :^)";
         }
-        String messageSanitized = message.replaceAll("\u00e0¸¢\u00e0¸\u2021", "").replace("{name}", name);
+        String messageSanitized = message.replaceAll("\u00e0ï¿½ï¿½\u00e0ï¿½\u2021", "").replace("{name}", name);
         if (messageSanitized.length() > 255) {
             messageSanitized = messageSanitized.substring(0, 255);
         }

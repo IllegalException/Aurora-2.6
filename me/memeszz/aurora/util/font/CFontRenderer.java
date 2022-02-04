@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.util.font;
 
 import net.minecraft.client.renderer.texture.*;
@@ -103,7 +100,7 @@ public class CFontRenderer extends CFont
             GL11.glBindTexture(3553, this.tex.getGlTextureId());
             for (int i = 0; i < size; ++i) {
                 final char character = text.charAt(i);
-                if (character == '§' && i < size) {
+                if (character == 'ï¿½' && i < size) {
                     int colorIndex = 21;
                     try {
                         colorIndex = "0123456789abcdefklmnor".indexOf(text.charAt(i + 1));
@@ -201,7 +198,7 @@ public class CFontRenderer extends CFont
         boolean italic = false;
         for (int size = text.length(), i = 0; i < size; ++i) {
             final char character = text.charAt(i);
-            if (character == '§' && i < size) {
+            if (character == 'ï¿½' && i < size) {
                 final int colorIndex = "0123456789abcdefklmnor".indexOf(character);
                 if (colorIndex < 16) {
                     bold = false;
@@ -281,7 +278,7 @@ public class CFontRenderer extends CFont
                 final String word = var8[var10];
                 for (int i = 0; i < word.toCharArray().length; ++i) {
                     final char c = word.toCharArray()[i];
-                    if (c == '§' && i < word.toCharArray().length - 1) {
+                    if (c == 'ï¿½' && i < word.toCharArray().length - 1) {
                         lastColorCode = word.toCharArray()[i + 1];
                     }
                 }
@@ -290,12 +287,12 @@ public class CFontRenderer extends CFont
                 }
                 else {
                     finalWords.add(currentWord);
-                    currentWord = '§' + lastColorCode + word + " ";
+                    currentWord = 'ï¿½' + lastColorCode + word + " ";
                 }
             }
             if (currentWord.length() > 0) {
                 if (this.getStringWidth(currentWord) < width) {
-                    finalWords.add('§' + lastColorCode + currentWord + " ");
+                    finalWords.add('ï¿½' + lastColorCode + currentWord + " ");
                     currentWord = "";
                 }
                 else {
@@ -318,7 +315,7 @@ public class CFontRenderer extends CFont
         final char[] chars = string.toCharArray();
         for (int i = 0; i < chars.length; ++i) {
             final char c = chars[i];
-            if (c == '§' && i < chars.length - 1) {
+            if (c == 'ï¿½' && i < chars.length - 1) {
                 lastColorCode = chars[i + 1];
             }
             if (this.getStringWidth(currentWord + c) < width) {
@@ -326,7 +323,7 @@ public class CFontRenderer extends CFont
             }
             else {
                 finalWords.add(currentWord);
-                currentWord = '§' + lastColorCode + String.valueOf(c);
+                currentWord = 'ï¿½' + lastColorCode + String.valueOf(c);
             }
         }
         if (currentWord.length() > 0) {

@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.command.commands;
 
 import me.memeszz.aurora.command.*;
@@ -21,7 +18,7 @@ public class CmdsCommand extends Command
     
     public void onCommand(final String command, final String[] args) throws Exception {
         final int size = CommandManager.getCommands().size();
-        final TextComponentString msg = new TextComponentString("§7Commands: ");
+        final TextComponentString msg = new TextComponentString("ï¿½7Commands: ");
         for (int i = 0; i < size; ++i) {
             final Command c = CommandManager.getCommands().get(i);
             if (c != null) {

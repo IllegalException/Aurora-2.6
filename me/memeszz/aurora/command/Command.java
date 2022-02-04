@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.command;
 
 import net.minecraft.client.*;
@@ -31,7 +28,7 @@ public abstract class Command
     }
     
     public static char SECTIONSIGN() {
-        return '§';
+        return 'ï¿½';
     }
     
     public static void sendRawMessage(final String message) {

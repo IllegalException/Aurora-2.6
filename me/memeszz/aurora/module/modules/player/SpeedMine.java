@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.player;
 
 import me.memeszz.aurora.module.*;
@@ -33,7 +30,7 @@ public class SpeedMine extends Module
     }
     
     public String getHudInfo() {
-        return "§7[§f" + this.mode.getValue() + "§7]";
+        return "ï¿½7[ï¿½f" + this.mode.getValue() + "ï¿½7]";
     }
     
     public void setup() {

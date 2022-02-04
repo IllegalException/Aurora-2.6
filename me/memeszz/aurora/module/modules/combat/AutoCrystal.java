@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.combat;
 
 import me.memeszz.aurora.module.*;
@@ -363,8 +360,8 @@ public class AutoCrystal extends Module
     
     public String getHudInfo() {
         if (AutoCrystal.target != null) {
-            return "§7[§a" + AutoCrystal.target.getName() + "§7]";
+            return "ï¿½7[ï¿½a" + AutoCrystal.target.getName() + "ï¿½7]";
         }
-        return "§7[§cNo target!§7]";
+        return "ï¿½7[ï¿½cNo target!ï¿½7]";
     }
 }

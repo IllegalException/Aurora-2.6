@@ -1,7 +1,4 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\XeonLyfeGPC\Desktop\1.12 stable mappings"!
-
-//Decompiled by Procyon!
-
+//Decomped By XeonLyfe
 package me.memeszz.aurora.module.modules.combat;
 
 import me.memeszz.aurora.setting.*;
@@ -48,7 +45,7 @@ public class OffHandCrystal extends Module
             ModuleManager.getModuleByName("AutoTotem").disable();
         }
         if (this.announceUsage2.getValue()) {
-            Wrapper.sendClientMessage("§aOffHandCrystal Enabled");
+            Wrapper.sendClientMessage("ï¿½aOffHandCrystal Enabled");
         }
     }
     
@@ -57,7 +54,7 @@ public class OffHandCrystal extends Module
             ModuleManager.getModuleByName("AutoTotem").enable();
         }
         if (this.announceUsage2.getValue()) {
-            Wrapper.sendClientMessage("§cOffHandCrystal Disabled");
+            Wrapper.sendClientMessage("ï¿½cOffHandCrystal Disabled");
         }
     }
     
@@ -129,6 +126,6 @@ public class OffHandCrystal extends Module
     }
     
     public String getHudInfo() {
-        return "§7[§f" + this.crystals + "§7]";
+        return "ï¿½7[ï¿½f" + this.crystals + "ï¿½7]";
     }
 }
